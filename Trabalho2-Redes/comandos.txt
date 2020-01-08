@@ -1,0 +1,8 @@
+compilar:
+	javac -d ../../bin/ *.java
+
+executar:
+
+	java -Djava.server.rmi.codebaseile:///rmi/ -Djava.security.policy=policy GameServer
+	
+	java -Djava.security.policy=policy GameClient
